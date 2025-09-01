@@ -23,7 +23,8 @@ COPY plugins/* /home/nvim/.config/nvim/lua/custom/plugins/
 RUN timeout 60 nvim --headless || true
 
 RUN nvim --headless -c 'MasonInstall ansible-language-server'  -c qa
-RUN nvim --headless -c 'MasonInstall basedpyright'  -c qa
+RUN nvim --headless -c 'MasonInstall ansible-lint'  -c qa
+# RUN nvim --headless -c 'MasonInstall basedpyright'  -c qa
 
 
 
