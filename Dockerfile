@@ -24,6 +24,8 @@ RUN timeout 60 nvim --headless || true
 
 RUN nvim --headless -c 'MasonInstall ansible-language-server'  -c qa
 RUN nvim --headless -c 'MasonInstall ansible-lint'  -c qa
+RUN nvim --headless -c 'MasonInstall bash-language-server'  -c qa
+RUN nvim --headless -c 'MasonInstall shellcheck'  -c qa
 # RUN nvim --headless -c 'MasonInstall basedpyright'  -c qa
 
 
