@@ -18,6 +18,10 @@ RUN git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:
 COPY init.lua /home/nvim/.config/nvim/init.lua
 COPY plugins/* /home/nvim/.config/nvim/lua/custom/plugins/
 
+RUN mkdir /home/nvim/.config/nvim/lua/custom/include
+COPY include/* /home/nvim/config/nvim/lua/custom/include/
+
+
 
 # allow initialization
 RUN timeout 60 nvim --headless || true
