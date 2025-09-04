@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+read -p 'wipe all configs and plugins? yes to continue: ' confirm
+
+if [ "${

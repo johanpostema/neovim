@@ -19,7 +19,7 @@ COPY init.lua /home/nvim/.config/nvim/init.lua
 COPY plugins/* /home/nvim/.config/nvim/lua/custom/plugins/
 
 RUN mkdir /home/nvim/.config/nvim/lua/custom/include
-COPY include/* /home/nvim/config/nvim/lua/custom/include/
+COPY include/* /home/nvim/.config/nvim/lua/custom/include/
 
 
 
