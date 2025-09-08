@@ -4,9 +4,12 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.ansible" },
-  { import = "astrocommunity.pack.python" },
-  -- import/override with your plugins folder
+	"AstroNvim/astrocommunity",
+	{ import = "astrocommunity.pack.lua" },
+	{ import = "astrocommunity.pack.ansible" },
+	{ import = "astrocommunity.pack.python" },
+	{ import = "astrocommunity.pack.docker" },
+	{ import = "astrocommunity.pack.yaml" },
+	{ import = "astrocommunity.pack.bash" },
+	-- import/override with your plugins folder
 }
