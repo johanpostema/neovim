@@ -11,5 +11,6 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.yaml" },
 	{ import = "astrocommunity.pack.bash" },
+	{ import = "astrocommunity.editing-support.codecompanion-nvim" },
 	-- import/override with your plugins folder
 }
