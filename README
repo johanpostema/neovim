@@ -1,0 +1,12 @@
+# astronvim
+
+
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
+
+nvim --headless -c "MasonInstall basedpyright" -c "qa"
+
+cp polish.lua ~/.config/nvim/lua/
+cp community.lua ~/.config/nvim/lua/community.lua
+cp plugins/* ${HOME}/.config/nvim/lua/plugins
